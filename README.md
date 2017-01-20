@@ -22,7 +22,7 @@ npm install
 npm run build
 ```
 
-### server it
+### serve it
 
 ``` 
 npm run server

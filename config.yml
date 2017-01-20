@@ -1,29 +1,33 @@
-# Your project's server will run on localhost:xxxx at this port
-PORT: 8000
+# we're not using this but i keep it around in case i add browser-sync
+PORT: 3000
 
-# Autoprefixer will make sure your CSS works with these browsers
+# autoprefixer will make sure your CSS works with these browsers
 COMPATIBILITY:
   - "last 2 versions"
   - "ie >= 9"
 
-# UnCSS will use these settings
+# uncss will use these settings
 UNCSS_OPTIONS:
   html:
     - "src/pages/*.html"
   ignore:
     - !!js/regexp ^\.is-.*
 
-# Gulp will reference these paths when it copies files
+# gulp will reference these paths when it copies files
 PATHS:
-  # Path to dist folder
+  # path to dist folder
   dist: "dist"  
-  # Paths to static assets that aren't images, CSS, or JavaScript
+  # paths to static assets that aren't images, css, or js
   assets:
     - "!src/assets/{img,js,scss}/**/*"
     - "src/assets/*.ico"
-  # Paths to Sass libraries, which can then be loaded with @import
+  # regular css files that aren't sass, less, etc
+  css:
+    - "src/css/*.css"
+  # paths to sass libraries, which can then be loaded with @import
   sass:
     - "src/scss/*.scss"
-  # Paths to JavaScript libraries, which are compined into one file
+  # paths to non-react js files/libraries, which are compined into one file
   javascript:
-    - "src/static_js/*.js"
+    - "src/js/static/*.js"
+    - "src/js/static/*.min.js"

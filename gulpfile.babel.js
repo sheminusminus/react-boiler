@@ -22,7 +22,7 @@ function loadConfig() {
 
 // build the "dist" folder
 gulp.task('build',
- gulp.series(clean, gulp.parallel(pages, sass, javascript, images, copy)));
+ gulp.series(clean, gulp.parallel(pages, sass, nosass, javascript, images, copy)));
 
 // Build the site, run the server, and watch for file changes
 gulp.task('default',
@@ -74,18 +74,18 @@ function javascript() {
       .on('error', e => { console.log(e); })
     ))
     .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
-    .pipe(gulp.dest(PATHS.dist + '/js'));
+    .pipe(gulp.dest(PATHS.dist + '/js/static'));
 }
 
 // copy images
 function images() {
   return gulp.src('src/img/*.{jpg,png,svg,gif}')
-	.pipe(gulp.dest(PATHS.dist + '/img'));
+	.pipe(gulp.dest(PATHS.dist + '/assets/img'));
 }
         
 // copy regular css styles
 function nosass() {
-  return gulp.src('src/css/*')
+  return gulp.src(PATHS.css)
     .pipe(gulp.dest(PATHS.dist + '/css'));
 }
 

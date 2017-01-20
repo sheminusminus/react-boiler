@@ -1,7 +1,7 @@
 {
-  "name": "emkolar.ninja",
+  "name": "react-boiler",
   "version": "1.0.0",
-  "description": "web and mobile dev portfolio",
+  "description": "react, express, gulp. basic boilerplate.",
   "main": "index.js",
   "scripts": {
     "start": "gulp",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/sheminusminus/emkolar.ninja.git"
+    "url": "git+https://github.com/sheminusminus/react-boiler.git"
   },
   "author": "Emily Kolar <emkolar@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://gitlab.com/sheminusminus/emkolar.ninja/issues"
+    "url": "https://github.com/sheminusminus/react-boiler/issues"
   },
-  "homepage": "https://gitlab.com/sheminusminus/emkolar.ninja#README",
+  "homepage": "https://github.com/sheminusminus/react-boiler#README",
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-core": "^6.18.0",

@@ -1,6 +1,4 @@
 import React from 'react';
-import Header from './Header';
-import Footer from './Footer';
 
 class Body extends React.Component{
 	
@@ -11,8 +9,7 @@ class Body extends React.Component{
 	render() {
 		return (
 			<div className="pagebody" id="pagebody">
-				<Header />
-				<Footer />
+				
 			</div>
 		)
 	}

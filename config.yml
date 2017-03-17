@@ -29,5 +29,5 @@ PATHS:
     - "src/scss/*.scss"
   # paths to non-react js files/libraries, which are compined into one file
   javascript:
-    - "src/js/static/*.js"
-    - "src/js/static/*.min.js"
+    - "src/js/*.js"
+    - "src/js/*.min.js"

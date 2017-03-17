@@ -1,7 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
 
-const SRC_FOLDER = path.join(__dirname, 'src/js')
+const SRC_FOLDER = path.join(__dirname, 'src/app')
 const DIST_FOLDER = path.join(__dirname, 'dist')
 
 module.exports = {
